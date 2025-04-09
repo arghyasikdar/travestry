@@ -2,7 +2,6 @@
 A directory traversal tool writen in Python.
 
 1. Clone the Repository
-bash
 
 ```
 git clone https://github.com/arghyasikdar/traversty.git
@@ -12,7 +11,7 @@ git clone https://github.com/arghyasikdar/traversty.git
 2. Navigate to the Project Directory
 
 ```
-bash | cd traversty
+cd traversty
 
 ```
 
@@ -20,7 +19,7 @@ bash | cd traversty
 
 ```
 
-bash | chmod +x traversty.py
+chmod +x traversty.py
 
 ```
 
@@ -29,7 +28,7 @@ bash | chmod +x traversty.py
 
 ```
 
-bash | sudo ln -s $(pwd)/traversty.py /usr/local/bin/traversty
+sudo ln -s $(pwd)/traversty.py /usr/local/bin/traversty
 
 ```
 
@@ -40,7 +39,7 @@ You can run Traversty using:
 
 ```
 
-bash | python3 traversty.py -u <target_url> -w <wordlist_file>
+python3 traversty.py -u <target_url> -w <wordlist_file>
 
 
 ```
@@ -49,7 +48,7 @@ or if you created the symlink:
 
 ```
 
-bash | traversty -u <target_url> -w <wordlist_file>
+traversty -u <target_url> -w <wordlist_file>
 
 ```
 
@@ -67,7 +66,7 @@ Option	Description
 
 ```
 
-bash | python3 traversty.py -u http://testphp.vulnweb.com -w common_traversals.txt
+python3 traversty.py -u http://testphp.vulnweb.com -w common_traversals.txt
 
 ```
 
@@ -75,7 +74,7 @@ OR if symlinked:
 
 ```
 
-bash | traversty -u http://testphp.vulnweb.com -w common_traversals.txt
+traversty -u http://testphp.vulnweb.com -w common_traversals.txt
 
 ```
 
