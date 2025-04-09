@@ -11,7 +11,7 @@ git clone https://github.com/arghyasikdar/traversty.git
 
 2. Navigate to the Project Directory
 
-   ```
+```
 bash | cd traversty
 
 ```
@@ -25,6 +25,7 @@ bash | chmod +x traversty.py
 ```
 
 6. (Optional) Create a Symlink to run from anywhere
+
 
 ```
 
@@ -40,6 +41,7 @@ You can run Traversty using:
 ```
 
 bash | python3 traversty.py -u <target_url> -w <wordlist_file>
+
 
 ```
 
