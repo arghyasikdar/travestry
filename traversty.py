@@ -3,7 +3,6 @@
 import requests
 import argparse
 import sys
-import os
 import time
 
 def banner():
@@ -58,11 +57,27 @@ def dir_traversal_scan(url, wordlist_file):
             print(f"\033[91m[!] Error connecting to {full_url}\033[0m")
 
 def main():
-    parser = argparse.ArgumentParser(description="Directory Traversal Scanner - traversty")
-    parser.add_argument("-u", "--url", required=True, help="Target URL")
-    parser.add_argument("-w", "--wordlist", required=True, help="Wordlist file")
+    parser = argparse.ArgumentParser(description="Directory Traversal Scanner - Traversty")
+    parser.add_argument("-u", "--url", help="Target URL")
+    parser.add_argument("-w", "--wordlist", help="Wordlist file")
+    parser.add_argument("-v", "--version", action="store_true", help="Show version info and exit")
+
+    if len(sys.argv) == 1:
+        banner()
+        parser.print_help(sys.stderr)
+        sys.exit(1)
 
     args = parser.parse_args()
+
+    if args.version:
+        banner()
+        print("\033[93mTraversty v1.0 by Arghya Sikdar\033[0m")
+        sys.exit(0)
+
+    if not args.url or not args.wordlist:
+        banner()
+        parser.print_help(sys.stderr)
+        sys.exit(1)
 
     banner()
     dir_traversal_scan(args.url, args.wordlist)
