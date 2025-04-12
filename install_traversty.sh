@@ -23,3 +23,5 @@ chmod +x /usr/local/bin/traversty
 
 echo "[+] Installation complete!"
 echo "[+] Now you can run the tool by typing: traversty"
+
+echo "hello world"
