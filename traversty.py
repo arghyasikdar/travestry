@@ -82,7 +82,7 @@ def main():
     banner()
     dir_traversal_scan(args.url, args.wordlist)
 
-print("hello")
+print("hello hello dinosaur")
 
 if __name__ == "__main__":
     main()
